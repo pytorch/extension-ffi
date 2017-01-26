@@ -5,6 +5,8 @@ import sys
 
 from setuptools import setup, find_packages
 
+import my_package.build
+
 this_file = os.path.dirname(__file__)
 
 setup(
