@@ -22,7 +22,8 @@ ffi = create_extension(
     sources=sources,
     define_macros=defines,
     relative_to=__file__,
-    with_cuda=with_cuda
+    with_cuda=with_cuda,
+    extra_compile_args=["-std=c99"]
 )
 
 if __name__ == '__main__':
